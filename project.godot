@@ -1,0 +1,43 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Ligue as Sílabas"
+run/main_scene="uid://cuwgnqvibhcgr"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://bdkyipvbvw7wv"
+
+[autoload]
+
+Global="*uid://27b2pnkal2nn"
+Menu="*uid://g20ldufarfsb"
+Audios="*uid://dij2eywif3g7i"
+
+[display]
+
+window/size/viewport_width=1024
+window/size/viewport_height=600
+window/stretch/mode="canvas_items"
+window/stretch/aspect="ignore"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

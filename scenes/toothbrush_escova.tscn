@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b3thge01378b4"]
+
+[ext_resource type="Script" uid="uid://d0hgb2q6pxjku" path="res://scripts/toothbrush_escova.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://dnh1weildofeu" path="res://assets/escova/escova-de-dente.png" id="2_tex"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ponta"]
+
+[node name="ToothbrushEscova" type="Area2D" unique_id=1376253757]
+z_index = 100
+script = ExtResource("1_script")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1318369402]
+position = Vector2(38.000004, 31.999998)
+rotation = -1.6475908
+scale = Vector2(0.11957031, 0.11957031)
+texture = ExtResource("2_tex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1790436388]
+shape = SubResource("CircleShape2D_ponta")

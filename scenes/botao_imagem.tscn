@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cbv08mrh7v5ku"]
+
+[ext_resource type="Texture2D" uid="uid://g8bkxicrk5wx" path="res://assets/tomada/caixa_imagem.png" id="1_ayach"]
+[ext_resource type="Script" uid="uid://dialt45br72p7" path="res://scripts/botao_imagem.gd" id="1_s01fg"]
+[ext_resource type="Texture2D" uid="uid://unybnkeihjbq" path="res://icon.svg" id="2_ayach"]
+[ext_resource type="Texture2D" uid="uid://blwx381gl0tht" path="res://assets/tomada/output.png" id="3_vkkwt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ayach"]
+size = Vector2(14, 69)
+
+[node name="botao_imagem" type="Node2D" unique_id=16704332]
+script = ExtResource("1_s01fg")
+
+[node name="caixa_imagem" type="Sprite2D" parent="." unique_id=1921180099]
+scale = Vector2(0.55426353, 0.54)
+texture = ExtResource("1_ayach")
+
+[node name="imagem" type="TextureRect" parent="." unique_id=1528726124]
+offset_left = -47.0
+offset_top = -42.0
+offset_right = 57.0
+offset_bottom = 58.0
+texture = ExtResource("2_ayach")
+expand_mode = 1
+
+[node name="output" type="Sprite2D" parent="." unique_id=2122001870]
+position = Vector2(118, 7)
+scale = Vector2(0.37598422, 0.37755102)
+texture = ExtResource("3_vkkwt")
+
+[node name="cor" type="Sprite2D" parent="." unique_id=912364643]
+visible = false
+position = Vector2(128.5, 7)
+scale = Vector2(0.29, 0.293)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2088447094]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1621025690]
+position = Vector2(-68, 7.5)
+shape = SubResource("RectangleShape2D_ayach")
+
+[node name="Marker" type="Marker2D" parent="." unique_id=1396617040]
+position = Vector2(-68, 8)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

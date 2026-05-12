@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dij2eywif3g7i"]
+
+[ext_resource type="Script" uid="uid://drf68pvy4sbne" path="res://scripts/Audios.gd" id="1_a0myk"]
+[ext_resource type="AudioStream" uid="uid://d0nmmrmjslvpl" path="res://assets/audios/acertou.ogg" id="2_2qliq"]
+[ext_resource type="AudioStream" uid="uid://dr1jldcbfibqy" path="res://assets/audios/emmraan-game-of-dwarves-264354.ogg" id="2_euwmi"]
+
+[node name="Audios" type="Node" unique_id=1791593097]
+script = ExtResource("1_a0myk")
+
+[node name="musica" type="AudioStreamPlayer" parent="." unique_id=309893923]
+stream = ExtResource("2_euwmi")
+volume_db = -13.0
+autoplay = true
+bus = &"Música"
+
+[node name="instrucao" type="AudioStreamPlayer" parent="." unique_id=429955115]
+
+[node name="audio" type="AudioStreamPlayer" parent="." unique_id=1258642801]
+
+[node name="audio_botao" type="AudioStreamPlayer" parent="." unique_id=340025749]
+
+[node name="eletricidade" type="AudioStreamPlayer" parent="." unique_id=1966116563]
+
+[node name="acertou" type="AudioStreamPlayer" parent="." unique_id=1353492740]
+stream = ExtResource("2_2qliq")
+volume_db = -5.0
+
+[connection signal="finished" from="instrucao" to="." method="_on_instrucao_finished"]

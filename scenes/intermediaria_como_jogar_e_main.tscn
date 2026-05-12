@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cl6jpirfncbje"]
+
+[ext_resource type="Script" uid="uid://dkkeo8qcdgpd3" path="res://scripts/intermediaria_como_jogar_e_main.gd" id="1_fwge6"]
+
+[node name="intermediaria_como_jogar_e_main" type="Node" unique_id=92999904]
+script = ExtResource("1_fwge6")

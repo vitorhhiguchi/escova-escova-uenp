@@ -1,0 +1,207 @@
+[gd_scene format=3 uid="uid://dgvjypiyfuafl"]
+
+[ext_resource type="Texture2D" uid="uid://b2o4lc71xbf8w" path="res://assets/background/fim_de_jogo.png" id="1_li6y8"]
+[ext_resource type="Script" uid="uid://bxh5lakaacc1q" path="res://scripts/fim.gd" id="1_rfd8f"]
+[ext_resource type="Texture2D" uid="uid://bjr0s14f6alkt" path="res://assets/robo/animation-sequence.png" id="3_anpyl"]
+[ext_resource type="FontFile" uid="uid://bc82x70ugbeoq" path="res://assets/Fontes/identidad/Identidad-ExtraBold.otf" id="4_anpyl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sugp2"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(0, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyhfs"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(301, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbgi4"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(602, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tefeu"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(903, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6xl0"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(1204, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tipki"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(1505, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85g3d"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(0, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_choun"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(301, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya4ey"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(602, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eb6dy"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(903, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trceg"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(1204, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8y0u"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(1505, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkv2x"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(0, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbj1t"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(301, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_muem4"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(602, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp3eg"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(903, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ld40"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(1204, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqmmt"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(1505, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yc10j"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(0, 1284, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jscy8"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(301, 1284, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pm3ni"]
+atlas = ExtResource("3_anpyl")
+region = Rect2(602, 1284, 301, 428)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_66g14"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sugp2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyhfs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbgi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tefeu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o6xl0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tipki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_85g3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_choun")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ya4ey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eb6dy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_trceg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8y0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkv2x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbj1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_muem4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp3eg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ld40")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqmmt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yc10j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jscy8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm3ni")
+}],
+"loop": true,
+"name": &"pulando_feliz",
+"speed": 30.0
+}]
+
+[node name="fim" type="Node" unique_id=1334275499]
+script = ExtResource("1_rfd8f")
+
+[node name="background" type="TextureRect" parent="." unique_id=1944460964]
+modulate = Color(0.72156864, 0.85882354, 1, 1)
+offset_left = -47.0
+offset_top = -48.0
+offset_right = 1070.0
+offset_bottom = 638.0
+mouse_filter = 2
+texture = ExtResource("1_li6y8")
+expand_mode = 1
+
+[node name="robo_pulando" type="AnimatedSprite2D" parent="." unique_id=1194578883]
+top_level = true
+z_index = 5
+position = Vector2(487, 485)
+scale = Vector2(0.5, 0.498)
+sprite_frames = SubResource("SpriteFrames_66g14")
+animation = &"pulando_feliz"
+autoplay = "pulando_feliz"
+
+[node name="Parabens" type="RichTextLabel" parent="." unique_id=1437979457]
+offset_top = 60.0
+offset_right = 1024.0
+offset_bottom = 199.0
+theme_override_colors/default_color = Color(1, 0.9529412, 0.6392157, 1)
+theme_override_colors/font_shadow_color = Color(0.101960786, 0.16470589, 0.2901961, 1)
+theme_override_colors/table_border = Color(0.101960786, 0.16470589, 0.2901961, 1)
+theme_override_constants/shadow_offset_x = 7
+theme_override_constants/shadow_offset_y = 7
+theme_override_constants/outline_size = 9
+theme_override_fonts/bold_font = ExtResource("4_anpyl")
+theme_override_font_sizes/bold_font_size = 80
+bbcode_enabled = true
+text = "[b][wave amp=150]P A R A B É N S
+[/wave][/b]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="." unique_id=1863784033]
+wait_time = 30.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

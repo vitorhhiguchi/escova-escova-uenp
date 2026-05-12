@@ -1,0 +1,104 @@
+[gd_scene load_steps=5 format=3 uid="uid://escolha_personagem_uid"]
+
+[ext_resource type="Script" path="res://scripts/escolha_personagem.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/meus-assets/background-inicial.png" id="2_bg"]
+[ext_resource type="FontFile" uid="uid://bc82x70ugbeoq" path="res://assets/Fontes/identidad/Identidad-ExtraBold.otf" id="3_font"]
+[ext_resource type="Texture2D" path="res://assets/botoes/botaoAzul.png" id="4_btn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_btn"]
+texture = ExtResource("4_btn")
+expand_margin_left = 6.0
+expand_margin_top = 6.0
+expand_margin_right = 6.0
+expand_margin_bottom = 6.0
+
+[node name="EscolhaPersonagem" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+
+[node name="Titulo" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 50.0
+offset_bottom = 160.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(1, 0.952941, 0.639216, 1)
+theme_override_colors/font_shadow_color = Color(0.101961, 0.164706, 0.290196, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 8
+theme_override_fonts/bold_font = ExtResource("3_font")
+theme_override_font_sizes/bold_font_size = 50
+bbcode_enabled = true
+text = "[center][b][wave amp=80]Quem vai escovar os dentes?[/wave][/b][/center]"
+scroll_active = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.55
+anchor_right = 0.5
+anchor_bottom = 0.55
+offset_left = -200.0
+offset_top = -60.0
+offset_right = 200.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="BtnMenino" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(170, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.952941, 0.819608, 1)
+theme_override_colors/font_hover_color = Color(0.3, 1, 0.5, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxTexture_btn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_btn")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_btn")
+text = "MENINO"
+
+[node name="BtnMenina" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(170, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.952941, 0.819608, 1)
+theme_override_colors/font_hover_color = Color(1, 0.5, 0.8, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxTexture_btn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_btn")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_btn")
+text = "MENINA"
+
+[node name="TimerBotao" type="Timer" parent="."]
+
+[connection signal="mouse_entered" from="HBoxContainer/BtnMenino" to="." method="_on_btn_mouse_entered"]
+[connection signal="mouse_exited" from="HBoxContainer/BtnMenino" to="." method="_on_btn_mouse_exited"]
+[connection signal="pressed" from="HBoxContainer/BtnMenino" to="." method="_on_btn_menino_pressed"]
+[connection signal="mouse_entered" from="HBoxContainer/BtnMenina" to="." method="_on_btn_mouse_entered"]
+[connection signal="mouse_exited" from="HBoxContainer/BtnMenina" to="." method="_on_btn_mouse_exited"]
+[connection signal="pressed" from="HBoxContainer/BtnMenina" to="." method="_on_btn_menina_pressed"]
+[connection signal="timeout" from="TimerBotao" to="." method="_on_timer_botao_timeout"]

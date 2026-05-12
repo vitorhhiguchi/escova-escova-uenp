@@ -1,0 +1,272 @@
+[gd_scene format=3 uid="uid://gsnegw48m1qv"]
+
+[ext_resource type="Script" uid="uid://bxdqmt2epqbwy" path="res://scripts/main.gd" id="1_a8y0u"]
+[ext_resource type="Texture2D" uid="uid://cg6c4ssk8kvfh" path="res://assets/background/background_main.png" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://bjr0s14f6alkt" path="res://assets/robo/animation-sequence.png" id="2_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://3wgqdxllgltm" path="res://assets/robo/robo_sem_bateria.png" id="2_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://dw1r5t25d7wqe" path="res://assets/botoes/como_jogar.png" id="3_sugp2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sugp2"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(0, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyhfs"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(301, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbgi4"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(602, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tefeu"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(903, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6xl0"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(1204, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tipki"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(1505, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85g3d"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(0, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_choun"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(301, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya4ey"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(602, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eb6dy"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(903, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trceg"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(1204, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8y0u"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(1505, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkv2x"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(0, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbj1t"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(301, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_muem4"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(602, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp3eg"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(903, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ld40"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(1204, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqmmt"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(1505, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yc10j"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(0, 1284, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jscy8"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(301, 1284, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pm3ni"]
+atlas = ExtResource("2_0wfyh")
+region = Rect2(602, 1284, 301, 428)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y6deb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sugp2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyhfs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbgi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tefeu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o6xl0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tipki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_85g3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_choun")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ya4ey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eb6dy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_trceg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8y0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkv2x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbj1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_muem4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp3eg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ld40")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqmmt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yc10j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jscy8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm3ni")
+}],
+"loop": true,
+"name": &"pulando_feliz",
+"speed": 30.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_tbgi4"]
+offsets = PackedFloat32Array(0, 0.3442623, 0.8360656)
+colors = PackedColorArray(1, 1, 1, 1, 1, 0.93333334, 0, 1, 0, 0.6666667, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_tefeu"]
+gradient = SubResource("Gradient_tbgi4")
+
+[sub_resource type="Curve" id="Curve_o6xl0"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.30337083), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_tipki"]
+curve = SubResource("Curve_o6xl0")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_85g3d"]
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 250.0
+initial_velocity_max = 750.0
+gravity = Vector3(0, 0, 0)
+scale_min = 5.0
+scale_max = 15.0
+scale_curve = SubResource("CurveTexture_tipki")
+color_ramp = SubResource("GradientTexture1D_tefeu")
+turbulence_enabled = true
+turbulence_noise_strength = 6.0
+turbulence_noise_scale = 2.0
+turbulence_influence_min = 0.3
+turbulence_influence_max = 0.8
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jyhfs"]
+texture = ExtResource("3_sugp2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ya4ey"]
+texture = ExtResource("3_sugp2")
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eb6dy"]
+texture = ExtResource("3_sugp2")
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[node name="main" type="Node2D" unique_id=1981397979]
+script = ExtResource("1_a8y0u")
+
+[node name="background" type="TextureRect" parent="." unique_id=1450912366]
+offset_right = 1024.0
+offset_bottom = 600.0
+mouse_filter = 2
+texture = ExtResource("1_o5qli")
+expand_mode = 1
+
+[node name="robo" type="TextureRect" parent="." unique_id=665526364]
+z_index = 5
+offset_left = 451.0
+offset_top = 425.0
+offset_right = 818.0
+offset_bottom = 1198.0
+scale = Vector2(0.24, 0.209)
+texture = ExtResource("2_jyhfs")
+expand_mode = 5
+
+[node name="robo_pulando" type="AnimatedSprite2D" parent="." unique_id=1467243101]
+visible = false
+z_index = 5
+position = Vector2(515.875, 489.36)
+scale = Vector2(0.40614617, 0.40355143)
+sprite_frames = SubResource("SpriteFrames_y6deb")
+animation = &"pulando_feliz"
+
+[node name="choque" type="GPUParticles2D" parent="." unique_id=252752500]
+z_index = 5
+position = Vector2(499, 516)
+emitting = false
+amount = 40
+lifetime = 0.3
+explosiveness = 0.8
+randomness = 0.5
+process_material = SubResource("ParticleProcessMaterial_85g3d")
+
+[node name="como_jogar" type="Button" parent="." unique_id=1558141570]
+offset_left = 29.0
+offset_top = 481.0
+offset_right = 129.0
+offset_bottom = 581.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_jyhfs")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ya4ey")
+theme_override_styles/hover = SubResource("StyleBoxTexture_eb6dy")
+
+[node name="Timer" type="Timer" parent="." unique_id=1380628309]
+autostart = true
+
+[node name="TimerInstrucao" type="Timer" parent="." unique_id=1490140019]
+wait_time = 30.0
+autostart = true
+
+[node name="TimerBotao" type="Timer" parent="." unique_id=1926600726]
+
+[connection signal="mouse_entered" from="como_jogar" to="." method="_on_como_jogar_mouse_entered"]
+[connection signal="mouse_exited" from="como_jogar" to="." method="_on_como_jogar_mouse_exited"]
+[connection signal="pressed" from="como_jogar" to="." method="_on_como_jogar_pressed"]
+[connection signal="timeout" from="Timer" to="." method="contar_tempo"]
+[connection signal="timeout" from="TimerInstrucao" to="." method="_on_timer_instrucao_timeout"]
+[connection signal="timeout" from="TimerBotao" to="." method="_on_timer_botao_timeout"]

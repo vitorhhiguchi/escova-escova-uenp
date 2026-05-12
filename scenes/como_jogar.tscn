@@ -1,0 +1,369 @@
+[gd_scene format=3 uid="uid://dhht6m7me1exk"]
+
+[ext_resource type="Script" uid="uid://46je6nuim4cg" path="res://scripts/como_jogar.gd" id="1_kf7ml"]
+[ext_resource type="Texture2D" uid="uid://cg6c4ssk8kvfh" path="res://assets/background/background_main.png" id="2_dvpto"]
+[ext_resource type="Texture2D" uid="uid://3wgqdxllgltm" path="res://assets/robo/robo_sem_bateria.png" id="3_27tuw"]
+[ext_resource type="Texture2D" uid="uid://bjr0s14f6alkt" path="res://assets/robo/animation-sequence.png" id="4_fmylf"]
+[ext_resource type="FontFile" uid="uid://bc82x70ugbeoq" path="res://assets/Fontes/identidad/Identidad-ExtraBold.otf" id="5_d33xf"]
+[ext_resource type="Texture2D" uid="uid://cn4ko1shdndbt" path="res://assets/botoes/botaoAzul.png" id="6_25ywq"]
+[ext_resource type="Texture2D" uid="uid://ypv48fj5j5gv" path="res://assets/tutorial/mouse_hand.png" id="7_25ywq"]
+[ext_resource type="Texture2D" uid="uid://x78jpjkm5lnk" path="res://assets/tutorial/Mouse.png" id="8_o4ncu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sugp2"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(0, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyhfs"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(301, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbgi4"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(602, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tefeu"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(903, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6xl0"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(1204, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tipki"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(1505, 0, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85g3d"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(0, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_choun"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(301, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya4ey"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(602, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eb6dy"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(903, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trceg"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(1204, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8y0u"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(1505, 428, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkv2x"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(0, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbj1t"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(301, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_muem4"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(602, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp3eg"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(903, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ld40"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(1204, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqmmt"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(1505, 856, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yc10j"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(0, 1284, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jscy8"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(301, 1284, 301, 428)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pm3ni"]
+atlas = ExtResource("4_fmylf")
+region = Rect2(602, 1284, 301, 428)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o4ncu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sugp2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyhfs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbgi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tefeu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o6xl0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tipki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_85g3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_choun")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ya4ey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eb6dy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_trceg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8y0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkv2x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbj1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_muem4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp3eg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ld40")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqmmt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yc10j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jscy8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm3ni")
+}],
+"loop": true,
+"name": &"pulando_feliz",
+"speed": 30.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_fmylf"]
+offsets = PackedFloat32Array(0, 0.3442623, 0.8360656)
+colors = PackedColorArray(1, 1, 1, 1, 1, 0.93333334, 0, 1, 0, 0.6666667, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_d33xf"]
+gradient = SubResource("Gradient_fmylf")
+
+[sub_resource type="Curve" id="Curve_25ywq"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.30337083), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_o4ncu"]
+curve = SubResource("Curve_25ywq")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_neguy"]
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 250.0
+initial_velocity_max = 750.0
+gravity = Vector3(0, 0, 0)
+scale_min = 5.0
+scale_max = 15.0
+scale_curve = SubResource("CurveTexture_o4ncu")
+color_ramp = SubResource("GradientTexture1D_d33xf")
+turbulence_enabled = true
+turbulence_noise_strength = 6.0
+turbulence_noise_scale = 2.0
+turbulence_influence_min = 0.3
+turbulence_influence_max = 0.8
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s20jd"]
+texture = ExtResource("6_25ywq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u2ma1"]
+texture = ExtResource("6_25ywq")
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_neblx"]
+texture = ExtResource("6_25ywq")
+expand_margin_left = 7.0
+expand_margin_top = 7.0
+expand_margin_right = 7.0
+expand_margin_bottom = 7.0
+
+[sub_resource type="Animation" id="Animation_d33xf"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cursor:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(918, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cursor:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(233, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_8t17s"]
+resource_name = "cursor_para_tomada1"
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cursor:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(918, -0.25, 0, 0.25, 0, 301, -0.16666667, 102.833336, 0, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cursor:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(233, -0.25, 0, 0.25, 0, 176, -0.16666667, 9.5, 0, 0),
+"times": PackedFloat32Array(0, 1)
+}
+
+[sub_resource type="Animation" id="Animation_25ywq"]
+resource_name = "imagem1_para_tomada2"
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cursor:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(609, 0, 0, 0.16666667, -50.166668, 308, -0.16666667, 101.66667, 0, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cursor:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(184, 0, 0, 0.16666667, 27.5, 349, -0.16666667, -19.333334, 0, 0),
+"times": PackedFloat32Array(0, 1)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_s20jd"]
+_data = {
+&"RESET": SubResource("Animation_d33xf"),
+&"cursor_para_tomada1": SubResource("Animation_8t17s"),
+&"imagem1_para_tomada2": SubResource("Animation_25ywq")
+}
+
+[node name="como_jogar" type="Node2D" unique_id=748833726]
+script = ExtResource("1_kf7ml")
+
+[node name="background" type="TextureRect" parent="." unique_id=2046981183]
+offset_right = 1024.0
+offset_bottom = 600.0
+mouse_filter = 2
+texture = ExtResource("2_dvpto")
+expand_mode = 1
+
+[node name="robo" type="TextureRect" parent="." unique_id=507734377]
+z_index = 5
+offset_left = 451.0
+offset_top = 425.0
+offset_right = 818.0
+offset_bottom = 1198.0
+scale = Vector2(0.24, 0.209)
+texture = ExtResource("3_27tuw")
+expand_mode = 5
+
+[node name="robo_pulando" type="AnimatedSprite2D" parent="." unique_id=2132993179]
+visible = false
+z_index = 5
+position = Vector2(515.875, 489.36)
+scale = Vector2(0.40614617, 0.40355143)
+sprite_frames = SubResource("SpriteFrames_o4ncu")
+animation = &"pulando_feliz"
+
+[node name="choque" type="GPUParticles2D" parent="." unique_id=1448005352]
+z_index = 5
+position = Vector2(499, 516)
+emitting = false
+amount = 40
+lifetime = 0.3
+explosiveness = 0.8
+randomness = 0.5
+process_material = SubResource("ParticleProcessMaterial_neguy")
+
+[node name="pular_tutorial" type="Button" parent="." unique_id=621947356]
+offset_left = 722.0
+offset_top = 500.0
+offset_right = 990.0
+offset_bottom = 570.0
+theme_override_colors/font_color = Color(1, 0.9529412, 0.81960785, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.9529412, 0.81960785, 1)
+theme_override_colors/font_hover_color = Color(1, 0.9529412, 0.6392157, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("5_d33xf")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxTexture_s20jd")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_u2ma1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_neblx")
+text = "PULAR TUTORIAL"
+
+[node name="cursor" type="Sprite2D" parent="." unique_id=1204797434]
+z_index = 20
+position = Vector2(918, 233)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_25ywq")
+
+[node name="mouse" type="Sprite2D" parent="." unique_id=372819901]
+position = Vector2(926, 386)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("8_o4ncu")
+
+[node name="TimerBotao" type="Timer" parent="." unique_id=1869768510]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1098128483]
+libraries/ = SubResource("AnimationLibrary_s20jd")
+
+[connection signal="mouse_entered" from="pular_tutorial" to="." method="_on_pular_tutorial_mouse_entered"]
+[connection signal="mouse_exited" from="pular_tutorial" to="." method="_on_pular_tutorial_mouse_exited"]
+[connection signal="pressed" from="pular_tutorial" to="." method="_on_pular_tutorial_pressed"]
+[connection signal="timeout" from="TimerBotao" to="." method="_on_timer_botao_timeout"]

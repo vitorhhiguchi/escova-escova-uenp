@@ -1,0 +1,164 @@
+[gd_scene format=3 uid="uid://bhbeu4hpu5un2"]
+
+[ext_resource type="Script" uid="uid://775nd4o1i3cu" path="res://scripts/game_escova.gd" id="1_script"]
+[ext_resource type="FontFile" uid="uid://bc82x70ugbeoq" path="res://assets/Fontes/identidad/Identidad-ExtraBold.otf" id="2_font"]
+[ext_resource type="PackedScene" uid="uid://b3thge01378b4" path="res://scenes/toothbrush_escova.tscn" id="3_brush"]
+[ext_resource type="Texture2D" uid="uid://bscop8tk2g4y7" path="res://assets/escova/fem-jogando-sujo.png" id="4_bg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0.12, 0.2, 0.35, 0.85)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="GameEscova" type="Node2D" unique_id=1793379200]
+script = ExtResource("1_script")
+
+[node name="MouthBackground" type="TextureRect" parent="." unique_id=1015636845]
+offset_right = 1024.0
+offset_bottom = 600.0
+mouse_filter = 2
+texture = ExtResource("4_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=521224054]
+
+[node name="TopBarBackground" type="Panel" parent="UI" unique_id=1573163088]
+offset_left = 140.0
+offset_top = 10.0
+offset_right = 797.0
+offset_bottom = 85.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="TopBar" type="HBoxContainer" parent="UI" unique_id=156351123]
+offset_left = 150.0
+offset_top = 15.0
+offset_right = 780.0
+offset_bottom = 80.0
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="PhaseLabel" type="Label" parent="UI/TopBar" unique_id=652384241]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.2, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 24
+text = "⭐ Fase 1/5"
+
+[node name="Separator1" type="VSeparator" parent="UI/TopBar" unique_id=1875413706]
+layout_mode = 2
+
+[node name="WordLabel" type="Label" parent="UI/TopBar" unique_id=255359277]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 32
+text = "_ _ NANA"
+
+[node name="Separator2" type="VSeparator" parent="UI/TopBar" unique_id=1738828875]
+layout_mode = 2
+
+[node name="ScoreLabel" type="Label" parent="UI/TopBar" unique_id=1108530893]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3, 1, 0.5, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 24
+text = "🌟 0"
+
+[node name="FeedbackLabel" type="Label" parent="UI" unique_id=1805831145]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -250.0
+offset_top = -90.0
+offset_right = 250.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ApiImagePanel" type="Panel" parent="UI" unique_id=1592966494]
+offset_left = 792.0
+offset_top = 120.0
+offset_right = 992.0
+offset_bottom = 320.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="ApiImageRect" type="TextureRect" parent="UI/ApiImagePanel" unique_id=1519721547]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TeethContainer" type="Node2D" parent="." unique_id=1227990753]
+
+[node name="ToothPositions" type="Node2D" parent="." unique_id=1163425924]
+
+[node name="Pos1" type="Marker2D" parent="ToothPositions" unique_id=249320976]
+position = Vector2(457.00003, 419)
+rotation = -0.1
+
+[node name="Pos2" type="Marker2D" parent="ToothPositions" unique_id=1322024137]
+position = Vector2(499, 428)
+
+[node name="Pos3" type="Marker2D" parent="ToothPositions" unique_id=1915103479]
+position = Vector2(545, 428)
+
+[node name="Pos4" type="Marker2D" parent="ToothPositions" unique_id=1242842332]
+position = Vector2(587, 420.00003)
+rotation = 0.1
+
+[node name="ChoqueParticles" type="CPUParticles2D" parent="." unique_id=2581082]
+position = Vector2(512, 300)
+emitting = false
+amount = 40
+lifetime = 0.5
+one_shot = true
+explosiveness = 0.8
+emission_shape = 1
+emission_sphere_radius = 150.0
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 100.0
+initial_velocity_max = 300.0
+scale_amount_min = 4.0
+scale_amount_max = 8.0
+color = Color(1, 1, 0, 1)
+
+[node name="AudioPalavra" type="AudioStreamPlayer" parent="." unique_id=596068747]
+
+[node name="TimerTempo" type="Timer" parent="." unique_id=461601786]
+autostart = true
+
+[node name="TimerInstrucao" type="Timer" parent="." unique_id=2079152267]
+wait_time = 30.0
+autostart = true
+
+[node name="ToothbrushEscova" parent="." unique_id=1109701602 instance=ExtResource("3_brush")]
+
+[connection signal="timeout" from="TimerTempo" to="." method="_on_timer_tempo_timeout"]
+[connection signal="timeout" from="TimerInstrucao" to="." method="_on_timer_instrucao_timeout"]
