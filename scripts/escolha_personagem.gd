@@ -4,7 +4,7 @@ var mouse_dentro = false
 
 func _ready() -> void:
 	Menu.telaInicial = false
-	Audios.tocar_instrucao("res://assets/audios/escolha_personagem.ogg")
+	Audios.tocar_instrucao("res://assets/audios/escolher-personagem.mp3")
 
 func _on_btn_menino_pressed() -> void:
 	Global.personagem_escolhido = "masc"

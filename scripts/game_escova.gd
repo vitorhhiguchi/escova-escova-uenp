@@ -145,16 +145,9 @@ func _on_tooth_brushed(syllable: String, is_correct: bool, _node: Area2D) -> voi
 		feedback_label.modulate = Color(1.0, 0.4, 0.4)
 		
 		# Som de erro
-		Audios.som_eletricidade("res://assets/audios/648462__andreas__wrong-answer.mp3")
+		Audios.som_eletricidade("res://assets/audios/errou2.ogg")
 		
-		# Tremida na tela + pisca vermelho como feedback de erro
-		var origem = mouth_bg.position
-		var tween_shake = create_tween()
-		for i in range(6):
-			var offset = Vector2(randf_range(-8, 8), randf_range(-5, 5))
-			tween_shake.tween_property(mouth_bg, "position", origem + offset, 0.04)
-		tween_shake.tween_property(mouth_bg, "position", origem, 0.04)
-		
+		# Pisca vermelho como feedback de erro
 		var tween_pisca = create_tween()
 		for i in range(3):
 			tween_pisca.tween_property(mouth_bg, "modulate", Color(1, 0.7, 0.7), 0.06)

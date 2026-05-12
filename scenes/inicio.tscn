@@ -51,26 +51,44 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="jogar" type="Button" parent="." unique_id=681846618]
-offset_left = 418.0
-offset_top = 338.0
-offset_right = 618.0
-offset_bottom = 408.0
+offset_left = 372.0
+offset_top = 310.0
+offset_right = 652.0
+offset_bottom = 380.0
 theme_override_colors/font_color = Color(1, 0.9529412, 0.81960785, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.9529412, 0.81960785, 1)
 theme_override_colors/font_hover_color = Color(1, 0.9529412, 0.6392157, 1)
 theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("1_i3824")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxTexture_oc22k")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_q3pj3")
 theme_override_styles/hover = SubResource("StyleBoxTexture_se2mk")
 text = "JOGAR"
+
+[node name="como_jogar" type="Button" parent="." unique_id=1849203841]
+offset_left = 372.0
+offset_top = 410.0
+offset_right = 652.0
+offset_bottom = 480.0
+theme_override_colors/font_color = Color(1, 0.9529412, 0.81960785, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.9529412, 0.81960785, 1)
+theme_override_colors/font_hover_color = Color(1, 0.9529412, 0.6392157, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("1_i3824")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_oc22k")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_q3pj3")
+theme_override_styles/hover = SubResource("StyleBoxTexture_se2mk")
+text = "COMO JOGAR"
 
 [node name="Intro" parent="." unique_id=553172173 instance=ExtResource("5_se2mk")]
 offset_left = 9.0
 offset_top = 4.0
 
 [node name="Timer" type="Timer" parent="." unique_id=1387654483]
+
+[node name="TimerComoJogar" type="Timer" parent="." unique_id=2049182391]
 
 [node name="TimerInstrucao" type="Timer" parent="." unique_id=325176531]
 wait_time = 30.0
@@ -79,5 +97,10 @@ autostart = true
 [connection signal="mouse_entered" from="jogar" to="." method="_on_jogar_mouse_entered"]
 [connection signal="mouse_exited" from="jogar" to="." method="_on_jogar_mouse_exited"]
 [connection signal="pressed" from="jogar" to="." method="_on_jogar_pressed"]
+[connection signal="mouse_entered" from="como_jogar" to="." method="_on_como_jogar_mouse_entered"]
+[connection signal="mouse_exited" from="como_jogar" to="." method="_on_como_jogar_mouse_exited"]
+[connection signal="pressed" from="como_jogar" to="." method="_on_como_jogar_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="TimerComoJogar" to="." method="_on_timer_como_jogar_timeout"]
 [connection signal="timeout" from="TimerInstrucao" to="." method="_on_timer_instrucao_timeout"]
+

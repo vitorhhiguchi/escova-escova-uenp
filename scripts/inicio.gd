@@ -45,5 +45,25 @@ func _on_timer_instrucao_timeout() -> void:
 	Audios.tocar_instrucao("res://assets/audios/tela_inicial.ogg")
 
 
+func _on_como_jogar_pressed() -> void:
+	reset_dados()
+	get_tree().change_scene_to_file("res://scenes/como_jogar.tscn")
+
+
+func _on_como_jogar_mouse_entered() -> void:
+	mouse_dentro = true
+	$TimerComoJogar.start()
+
+
+func _on_como_jogar_mouse_exited() -> void:
+	mouse_dentro = false
+	$TimerComoJogar.stop()
+
+
+func _on_timer_como_jogar_timeout() -> void:
+	Audios.tocar_audio("res://assets/audios/como_jogar.ogg", self)
+	$TimerComoJogar.stop()
+
+
 func is_mouse_inside() -> bool:
 	return mouse_dentro
