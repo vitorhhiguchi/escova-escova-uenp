@@ -1,0 +1,356 @@
+[
+  {
+    "palavra": "BANANA",
+    "silaba": "BA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ba_Banana_Imagem_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ba_Banana_Foto_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ba_Banana_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ba_Banana_Foto_2.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/ba.ogg",
+    "complemento_silaba": "_ _NANA"
+  },
+  {
+    "palavra": "CACHORRO",
+    "silaba": "CA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ca_Cachorro_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ca_Cachorro_Foto_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ca_Cachorro_Imagem_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ca_Cachorro_Foto_2.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/ca.ogg",
+    "complemento_silaba": "_ _CHORRO"
+  },
+  {
+    "palavra": "ZABUMBA",
+    "silaba": "ZA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Za_Zabumba_Imagem_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Za_Zabumba_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Za_Zabumba_Foto_1.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/za.ogg",
+    "complemento_silaba": "_ _BUMBA"
+  },
+  {
+    "palavra": "XADREZ",
+    "silaba": "XA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Xa_Xadrez_Foto_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Xa_Xadrez_Foto_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Xa_Xadrez_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Xa_Xadrez_Imagem_2.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/xa.ogg",
+    "complemento_silaba": "_ _DREZ"
+  },
+  {
+    "palavra": "NAVIO",
+    "silaba": "NA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Na_Navio_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Na_Navio_Foto_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Na_Navio_Imagem_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Na_Navio_Foto_1.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/na.ogg",
+    "complemento_silaba": "_ _VIO"
+  },
+  {
+    "palavra": "MACACO",
+    "silaba": "MA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ma_Macaco_Foto_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ma_Macaco_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ma_Macaco_Foto_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ma_Macaco_Imagem_2.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/ma.ogg",
+    "complemento_silaba": "_ _CACO"
+  },
+  {
+    "palavra": "QUATI",
+    "silaba": "QUA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Qua_Quati_Foto_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Qua_Quati_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Qua_Quati_Foto_1.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/qua.ogg",
+    "complemento_silaba": "_ _ _TI"
+  },
+  {
+    "palavra": "JACARÉ",
+    "silaba": "JA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ja_Jacare_Foto_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ja_Jacare_Foto_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ja_Jacare_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ja_Jacare_Imagem_2.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/ja.ogg",
+    "complemento_silaba": "_ _CARÉ"
+  },
+  {
+    "palavra": "PATO",
+    "silaba": "PA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Pa_Pato_Foto_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Pa_Pato_Foto_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Pa_Pato_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Pa_Pato_Imagem_2.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/pa.ogg",
+    "complemento_silaba": "_ _TO"
+  },
+  {
+    "palavra": "FACA",
+    "silaba": "FA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Fa_Faca_Foto_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Fa_Faca_Imagem_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Fa_Faca_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Fa_Faca_Foto_1.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/fa.ogg",
+    "complemento_silaba": "_ _CA"
+  },
+  {
+    "palavra": "DADO",
+    "silaba": "DA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Da_Dado_Foto_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Da_Dado_Foto_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Da_Dado_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Da_Dado_Imagem_2.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/da.ogg",
+    "complemento_silaba": "_ _DO"
+  },
+  {
+    "palavra": "AVIÃO",
+    "silaba": "A",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/A_Aviao_Foto_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/A_Aviao_Imagem_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/A_Aviao_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/A_Aviao_Foto_2.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/a.ogg",
+    "complemento_silaba": "_VIÃO"
+  },
+  {
+    "palavra": "SAPO",
+    "silaba": "SA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Sa_Sapo_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Sa_Sapo_Foto_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Sa_Sapo_Imagem_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Sa_Sapo_Foto_2.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/sa.ogg",
+    "complemento_silaba": "_ _PO"
+  },
+  {
+    "palavra": "VACA",
+    "silaba": "VA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Va_Vaca_Foto_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Va_Vaca_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Va_Vaca_Imagem_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Va_Vaca_Foto_2.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/va.ogg",
+    "complemento_silaba": "_ _CA"
+  },
+  {
+    "palavra": "RATO",
+    "silaba": "RA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ra_Rato_Foto_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ra_Rato_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ra_Rato_Imagem_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ra_Rato_Foto_2.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/ra.ogg",
+    "complemento_silaba": "_ _TO"
+  },
+  {
+    "palavra": "TATU",
+    "silaba": "TA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ta_Tatu_Imagem_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ta_Tatu_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ta_Tatu_Foto_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ta_Tatu_Foto_1.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/ta.ogg",
+    "complemento_silaba": "_ _TU"
+  },
+  {
+    "palavra": "GATO",
+    "silaba": "GA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ga_Gato_Imagem_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ga_Gato_Foto_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ga_Gato_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/Ga_Gato_Foto_1.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/ga.ogg",
+    "complemento_silaba": "_ _TO"
+  },
+  {
+    "palavra": "LÁPIS",
+    "silaba": "LA",
+    "imagens": [
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/La_Lapis_Foto_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/La_Lapis_Imagem_2.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/La_Lapis_Imagem_1.png"
+      },
+      {
+        "imagem": "res://assets/recursos_estaticos/imagens/La_Lapis_Foto_1.png"
+      }
+    ],
+    "som": "res://assets/recursos_estaticos/audios/la.ogg",
+    "complemento_silaba": "_ _PIS"
+  }
+]

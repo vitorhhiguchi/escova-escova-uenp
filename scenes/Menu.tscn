@@ -127,8 +127,6 @@ text = "VOLUME"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=1471093685]
-
 [node name="Timer_porta" type="Timer" parent="." unique_id=2000783275]
 
 [node name="Timer_volume" type="Timer" parent="." unique_id=709140616]

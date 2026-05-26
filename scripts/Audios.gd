@@ -11,6 +11,9 @@ func tocar_instrucao(caminho_instrucao: String) -> void:
 
 
 func tocar_audio(caminho_audio, requester: Node) -> void:
+	if caminho_audio == null:
+		return
+
 	if $instrucao.playing or $audio_botao.playing or $acertou.playing:
 		pedido_pendente = { "caminho": caminho_audio, "requester": requester }
 		return
@@ -29,6 +32,9 @@ func tocar_acertou():
 
 
 func audio_botao(caminho_audio):
+	if caminho_audio == null:
+		return
+
 	$instrucao.stop()
 	if caminho_audio is String:
 		$audio_botao.stream = load(caminho_audio)
@@ -53,6 +59,8 @@ func _on_instrucao_finished() -> void:
 	var caminho = pedido_pendente.get("caminho")
 	var requester = pedido_pendente.get("requester")
 	pedido_pendente.clear()
+	if caminho == null:
+		return
 
 	# garante que o botão ainda existe e o mouse ainda está nele
 	if is_instance_valid(requester) and requester.is_mouse_inside():

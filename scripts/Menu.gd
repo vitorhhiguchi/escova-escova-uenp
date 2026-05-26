@@ -23,8 +23,6 @@ var telaInicial: bool = false:
 func _ready():
 	# Definindo o valor do audio
 	$Menu/VSlider.value = som
-	
-	$HTTPRequest.request_completed.connect(_on_request_completed)
 
 
 func _on_request_completed(_result, _response_code, _headers, _body):
@@ -163,26 +161,10 @@ func _on_Inicio_Menu():
 
 #Envia dados para plataforma
 func _postData():
-	var data = {
-		"alunoId": int(Global.studentId),
-		"jogoId": int(Global.gameId),
-		"minutos": Global.TempoDeJogo_Min,
-		"segundos": Global.TempoDeJogo_Sec,
-		"concluido": Global.JogoConcluido,
-		"pontos": Global.Score,
-		"erros": Global.erros
-	}
-	var jsonData = JSON.stringify(data)
-	var headers = [
-		"Content-Type: application/json",
-		"Authorization: Bearer " + Global.token
-	]
-	$HTTPRequest.request(
-		"https://192.168.122.123/api/historicos",
-		headers,
-		HTTPClient.METHOD_POST,
-		jsonData
-	)
+	# Export HTML estatico: nao existe API local para receber historico.
+	if _fechando:
+		_fecharJogo()
+	resetar()
 
 
 func _on_timer_porta_timeout() -> void:

@@ -1,33 +1,10 @@
 extends Node
 
-#Node HTTPRequest
-var JsonRequest = HTTPRequest.new()
-var ImagemRequest = HTTPRequest.new()
-var AudioRequest = HTTPRequest.new()
-
-# Recebe as requisicoes
-var array_dicionario: Array
-var array_dicionario_imagens: Array
-var texturas : Array
-var audio
-
-#posicao no array de requisicoes
-var index = 0
-var cont_img = 0
-
-#array com dados apos as requisicoes
+# Banco local usado no export HTML. Antes esses dados vinham da API Docker.
 var array_silabas: Array
 var array_imagens: Array
 
-
-# cria dicionario
-var dicionario : Dictionary = {
-	"palavra" : "",
-	"silaba" :  "",
-	"complemento_silaba" : "",
-	"imagens" : null,
-	"som" : null
-}
+const CAMINHO_DADOS_ESTATICOS = "res://assets/recursos_estaticos/dados.json"
 
 # Dados para plataforma
 var Score : int = 0
@@ -45,83 +22,71 @@ var personagem_escolhido: String = "masc"
 
 
 func _ready() -> void:
-	add_child(JsonRequest)
-	add_child(ImagemRequest)
-	add_child(AudioRequest)
-	# Conecta o sinal de conclusão da requisição
-	JsonRequest.request_completed.connect(_on_json_request_completed)
-	ImagemRequest.request_completed.connect(_on_imagem_request_completed)
-	AudioRequest.request_completed.connect(_on_audio_request_completed)
-	
-	var url = "http://localhost:8080/api/recursos/silabas?vogal=A&limite=18&tipoColorir=NAO_COLORIR&quantImagens=4"
-	var headers = [
-		"Content-Type: application/json",
-	]
-	JsonRequest.request(url,
-		headers,
-		HTTPClient.METHOD_GET)
+	carregar_banco_estatico()
 
 
-func _on_json_request_completed(_result: int, _response_code: int, _headers: PackedStringArray, body: PackedByteArray) -> void:
-	var json_string = body.get_string_from_utf8()
-	
-	var json = JSON.parse_string(json_string)
-	
-	array_dicionario = json
-	
-	request_imagem()
-
-
-func request_imagem():
-	if index == array_dicionario.size():
+func carregar_banco_estatico() -> void:
+	if not array_silabas.is_empty():
 		return
-	#request imagem
-	array_dicionario_imagens = array_dicionario[index].imagens
-	if cont_img < array_dicionario_imagens.size():
-		ImagemRequest.request(array_dicionario_imagens[cont_img].imagem)
-		cont_img += 1 
+
+	var arquivo = FileAccess.open(CAMINHO_DADOS_ESTATICOS, FileAccess.READ)
+	if arquivo == null:
+		push_error("Nao foi possivel abrir o banco estatico: " + CAMINHO_DADOS_ESTATICOS)
+		return
+
+	var dados = JSON.parse_string(arquivo.get_as_text())
+	if typeof(dados) != TYPE_ARRAY:
+		push_error("Banco estatico invalido: " + CAMINHO_DADOS_ESTATICOS)
+		return
+
+	for item in dados:
+		var imagens: Array = []
+		for imagem in item.get("imagens", []):
+			var caminho_imagem = imagem.get("imagem", "")
+			if caminho_imagem != "":
+				var textura = carregar_textura_png(caminho_imagem)
+				if textura != null:
+					imagens.append(textura)
+
+		var caminho_som = item.get("som", "")
+		var som = null
+		if caminho_som != "":
+			som = carregar_audio_ogg(caminho_som)
+
+		array_silabas.append({
+			"palavra": item.get("palavra", ""),
+			"silaba": item.get("silaba", ""),
+			"complemento_silaba": item.get("complemento_silaba", ""),
+			"imagens": imagens,
+			"som": som
+		})
 
 
-func _on_imagem_request_completed(_result: int, _response_code: int, _headers: PackedStringArray, body: PackedByteArray) -> void:
-	var image = Image.new()
-	image.load_png_from_buffer(body)
-	var texture = ImageTexture.create_from_image(image)
-	texturas.append(texture)
-	
-	if cont_img < array_dicionario_imagens.size():
-		request_imagem()
-	else:
-		AudioRequest.request(array_dicionario[index].som)
-
-func _on_audio_request_completed(_result: int, _response_code: int, _headers: PackedStringArray, body: PackedByteArray) -> void:
-	audio = AudioStreamOggVorbis.load_from_buffer(body)
-	cria_dicionario()
+func carregar_textura_png(caminho: String):
+	var imagem = Image.new()
+	var erro = imagem.load(caminho)
+	if erro != OK:
+		push_error("Nao foi possivel carregar imagem estatica: " + caminho)
+		return null
+	return ImageTexture.create_from_image(imagem)
 
 
-func cria_dicionario() -> void:
-	dicionario = {
-		"palavra" : array_dicionario[index].palavra,
-		"silaba" :  array_dicionario[index].silaba,
-		"complemento_silaba" : array_dicionario[index].complemento_silaba,
-		"imagens" : texturas.duplicate(),
-		"som" : audio
-	}
-	array_silabas.append(dicionario)
-	
-	index += 1
-	
-	print(index)
-	
-	cont_img = 0
-	texturas.clear()
-	request_imagem()
+func carregar_audio_ogg(caminho: String):
+	if not FileAccess.file_exists(caminho):
+		push_error("Nao foi possivel encontrar audio estatico: " + caminho)
+		return null
+
+	var bytes = FileAccess.get_file_as_bytes(caminho)
+	return AudioStreamOggVorbis.load_from_buffer(bytes)
 
 
 func embaralhar():
+	carregar_banco_estatico()
 	array_silabas.shuffle()
 	array_imagens = array_silabas[0].imagens
 	array_imagens.shuffle()
 
 func embaralhar_imagens(pos_array):
+	carregar_banco_estatico()
 	array_imagens = array_silabas[pos_array].imagens
 	array_imagens.shuffle()
