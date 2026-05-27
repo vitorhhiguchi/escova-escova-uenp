@@ -1,0 +1,359 @@
+﻿{
+    "value":  [
+                  {
+                      "palavra":  "AVIÃO",
+                      "silaba":  "A",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/A_Aviao_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/A_Aviao_Imagem_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/A_Aviao_Imagem_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/A_Aviao_Foto_2.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/a.ogg",
+                      "complemento_silaba":  "_VIÃO"
+                  },
+                  {
+                      "palavra":  "CACHORRO",
+                      "silaba":  "CA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ca_Cachorro_Imagem_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ca_Cachorro_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ca_Cachorro_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ca_Cachorro_Imagem_1.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/ca.ogg",
+                      "complemento_silaba":  "_ _CHORRO"
+                  },
+                  {
+                      "palavra":  "SAPO",
+                      "silaba":  "SA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Sa_Sapo_Imagem_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Sa_Sapo_Imagem_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Sa_Sapo_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Sa_Sapo_Foto_1.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/sa.ogg",
+                      "complemento_silaba":  "_ _PO"
+                  },
+                  {
+                      "palavra":  "RATO",
+                      "silaba":  "RA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ra_Rato_Imagem_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ra_Rato_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ra_Rato_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ra_Rato_Imagem_2.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/ra.ogg",
+                      "complemento_silaba":  "_ _TO"
+                  },
+                  {
+                      "palavra":  "FACA",
+                      "silaba":  "FA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Fa_Faca_Imagem_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Fa_Faca_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Fa_Faca_Imagem_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Fa_Faca_Foto_2.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/fa.ogg",
+                      "complemento_silaba":  "_ _CA"
+                  },
+                  {
+                      "palavra":  "GATO",
+                      "silaba":  "GA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ga_Gato_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ga_Gato_Imagem_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ga_Gato_Imagem_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ga_Gato_Foto_1.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/ga.ogg",
+                      "complemento_silaba":  "_ _TO"
+                  },
+                  {
+                      "palavra":  "ZABUMBA",
+                      "silaba":  "ZA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Za_Zabumba_Imagem_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Za_Zabumba_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Za_Zabumba_Imagem_1.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/za.ogg",
+                      "complemento_silaba":  "_ _BUMBA"
+                  },
+                  {
+                      "palavra":  "NAVIO",
+                      "silaba":  "NA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Na_Navio_Imagem_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Na_Navio_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Na_Navio_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Na_Navio_Imagem_1.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/na.ogg",
+                      "complemento_silaba":  "_ _VIO"
+                  },
+                  {
+                      "palavra":  "JACARÃ",
+                      "silaba":  "JA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ja_Jacare_Imagem_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ja_Jacare_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ja_Jacare_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ja_Jacare_Imagem_2.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/ja.ogg",
+                      "complemento_silaba":  "_ _CARÃ"
+                  },
+                  {
+                      "palavra":  "LÃPIS",
+                      "silaba":  "LA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/La_Lapis_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/La_Lapis_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/La_Lapis_Imagem_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/La_Lapis_Imagem_2.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/la.ogg",
+                      "complemento_silaba":  "_ _PIS"
+                  },
+                  {
+                      "palavra":  "QUATI",
+                      "silaba":  "QUA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Qua_Quati_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Qua_Quati_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Qua_Quati_Imagem_1.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/qua.ogg",
+                      "complemento_silaba":  "_ _ _TI"
+                  },
+                  {
+                      "palavra":  "XADREZ",
+                      "silaba":  "XA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Xa_Xadrez_Imagem_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Xa_Xadrez_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Xa_Xadrez_Imagem_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Xa_Xadrez_Foto_1.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/xa.ogg",
+                      "complemento_silaba":  "_ _DREZ"
+                  },
+                  {
+                      "palavra":  "BANANA",
+                      "silaba":  "BA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ba_Banana_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ba_Banana_Imagem_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ba_Banana_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ba_Banana_Imagem_1.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/ba.ogg",
+                      "complemento_silaba":  "_ _NANA"
+                  },
+                  {
+                      "palavra":  "PATO",
+                      "silaba":  "PA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Pa_Pato_Imagem_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Pa_Pato_Imagem_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Pa_Pato_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Pa_Pato_Foto_1.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/pa.ogg",
+                      "complemento_silaba":  "_ _TO"
+                  },
+                  {
+                      "palavra":  "MACACO",
+                      "silaba":  "MA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ma_Macaco_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ma_Macaco_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ma_Macaco_Imagem_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ma_Macaco_Imagem_2.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/ma.ogg",
+                      "complemento_silaba":  "_ _CACO"
+                  },
+                  {
+                      "palavra":  "DADO",
+                      "silaba":  "DA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Da_Dado_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Da_Dado_Imagem_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Da_Dado_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Da_Dado_Imagem_2.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/da.ogg",
+                      "complemento_silaba":  "_ _DO"
+                  },
+                  {
+                      "palavra":  "VACA",
+                      "silaba":  "VA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Va_Vaca_Foto_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Va_Vaca_Imagem_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Va_Vaca_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Va_Vaca_Imagem_1.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/va.ogg",
+                      "complemento_silaba":  "_ _CA"
+                  },
+                  {
+                      "palavra":  "TATU",
+                      "silaba":  "TA",
+                      "imagens":  [
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ta_Tatu_Foto_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ta_Tatu_Imagem_1.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ta_Tatu_Imagem_2.png"
+                                      },
+                                      {
+                                          "imagem":  "http://localhost:3100/assets/Vogal_A/Imagens/Ta_Tatu_Foto_2.png"
+                                      }
+                                  ],
+                      "som":  "http://localhost:3100/assets/Vogal_A/Audios/ta.ogg",
+                      "complemento_silaba":  "_ _TU"
+                  }
+              ],
+    "Count":  18
+}

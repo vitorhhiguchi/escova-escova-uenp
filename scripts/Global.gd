@@ -63,21 +63,21 @@ func carregar_banco_estatico() -> void:
 
 
 func carregar_textura_png(caminho: String):
-	var imagem = Image.new()
-	var erro = imagem.load(caminho)
-	if erro != OK:
-		push_error("Nao foi possivel carregar imagem estatica: " + caminho)
-		return null
-	return ImageTexture.create_from_image(imagem)
+	if ResourceLoader.exists(caminho):
+		var textura = load(caminho)
+		if textura is Texture2D:
+			return textura
+	push_error("Nao foi possivel carregar imagem estatica: " + caminho)
+	return null
 
 
 func carregar_audio_ogg(caminho: String):
-	if not FileAccess.file_exists(caminho):
-		push_error("Nao foi possivel encontrar audio estatico: " + caminho)
-		return null
-
-	var bytes = FileAccess.get_file_as_bytes(caminho)
-	return AudioStreamOggVorbis.load_from_buffer(bytes)
+	if ResourceLoader.exists(caminho):
+		var audio = load(caminho)
+		if audio is AudioStream:
+			return audio
+	push_error("Nao foi possivel encontrar audio estatico: " + caminho)
+	return null
 
 
 func embaralhar():
