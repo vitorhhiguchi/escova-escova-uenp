@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dhht6m7me1exk"]
+﻿[gd_scene load_steps=6 format=3 uid="uid://dhht6m7me1exk"]
 
 [ext_resource type="Script" path="res://scripts/como_jogar.gd" id="1_script"]
 [ext_resource type="Texture2D" path="res://assets/escova/masc-jogando-sujo.png" id="2_bg"]
@@ -55,7 +55,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
 theme_override_fonts/font = ExtResource("3_font")
 theme_override_font_sizes/font_size = 24
-text = "💡 TUTORIAL"
+text = " TUTORIAL"
 
 [node name="Separator1" type="VSeparator" parent="UI/TopBar"]
 layout_mode = 2
@@ -142,3 +142,4 @@ texture = ExtResource("5_escova")
 [connection signal="mouse_exited" from="UI/PularTutorial" to="." method="_on_pular_tutorial_mouse_exited"]
 [connection signal="pressed" from="UI/PularTutorial" to="." method="_on_pular_tutorial_pressed"]
 [connection signal="timeout" from="TimerBotao" to="." method="_on_timer_botao_timeout"]
+

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bhbeu4hpu5un2"]
+﻿[gd_scene format=3 uid="uid://bhbeu4hpu5un2"]
 
 [ext_resource type="Script" uid="uid://775nd4o1i3cu" path="res://scripts/game_escova.gd" id="1_script"]
 [ext_resource type="FontFile" uid="uid://bc82x70ugbeoq" path="res://assets/Fontes/identidad/Identidad-ExtraBold.otf" id="2_font"]
@@ -47,7 +47,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
 theme_override_fonts/font = ExtResource("2_font")
 theme_override_font_sizes/font_size = 24
-text = "⭐ Fase 1/5"
+text = " Fase 1/5"
 
 [node name="Separator1" type="VSeparator" parent="UI/TopBar" unique_id=1875413706]
 layout_mode = 2
@@ -71,7 +71,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
 theme_override_fonts/font = ExtResource("2_font")
 theme_override_font_sizes/font_size = 24
-text = "🌟 0"
+text = " 0"
 
 [node name="FeedbackLabel" type="Label" parent="UI" unique_id=1805831145]
 anchors_preset = 7
@@ -162,3 +162,4 @@ autostart = true
 
 [connection signal="timeout" from="TimerTempo" to="." method="_on_timer_tempo_timeout"]
 [connection signal="timeout" from="TimerInstrucao" to="." method="_on_timer_instrucao_timeout"]
+

@@ -1,4 +1,4 @@
-extends Node2D
+﻿extends Node2D
 
 @onready var word_label = $UI/TopBar/WordLabel
 @onready var score_label = $UI/TopBar/ScoreLabel
@@ -133,7 +133,7 @@ func _on_tooth_brushed(syllable: String, is_correct: bool, _node: Area2D) -> voi
 			_start_new_round()
 		else:
 			game_finished = true
-			phase_label.text = "⭐⭐⭐⭐⭐ COMPLETO!"
+			phase_label.text = " COMPLETO!"
 			await get_tree().create_timer(2.0).timeout
 			get_tree().change_scene_to_file("res://scenes/fim_escova.tscn")
 	else:
@@ -155,13 +155,13 @@ func _on_tooth_brushed(syllable: String, is_correct: bool, _node: Area2D) -> voi
 		await tween_pisca.finished
 
 func _update_score() -> void:
-	score_label.text = "🌟 %d" % Global.Score
+	score_label.text = " %d" % Global.Score
 
 func _update_phase_display() -> void:
 	var stars = ""
 	for i in range(max_phases):
 		if i < current_phase - 1:
-			stars += "⭐"
+			stars += ""
 		elif i == current_phase - 1:
 			stars += "🔵"
 		else:
@@ -179,3 +179,4 @@ func _on_timer_instrucao_timeout() -> void:
 
 func is_mouse_inside() -> bool:
 	return mouse_dentro
+

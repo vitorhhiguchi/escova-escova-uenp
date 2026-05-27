@@ -63,19 +63,17 @@ func carregar_banco_estatico() -> void:
 
 
 func carregar_textura_png(caminho: String):
-	if ResourceLoader.exists(caminho):
-		var textura = load(caminho)
-		if textura is Texture2D:
-			return textura
+	var textura = load(caminho)
+	if textura is Texture2D:
+		return textura
 	push_error("Nao foi possivel carregar imagem estatica: " + caminho)
 	return null
 
 
 func carregar_audio_ogg(caminho: String):
-	if ResourceLoader.exists(caminho):
-		var audio = load(caminho)
-		if audio is AudioStream:
-			return audio
+	var audio = load(caminho)
+	if audio is AudioStream:
+		return audio
 	push_error("Nao foi possivel encontrar audio estatico: " + caminho)
 	return null
 

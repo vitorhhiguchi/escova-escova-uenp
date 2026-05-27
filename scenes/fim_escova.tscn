@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://fim_escova_uid"]
+﻿[gd_scene load_steps=5 format=3 uid="uid://fim_escova_uid"]
 
 [ext_resource type="Script" path="res://scripts/fim_escova.gd" id="1_script"]
 [ext_resource type="FontFile" uid="uid://bc82x70ugbeoq" path="res://assets/Fontes/identidad/Identidad-ExtraBold.otf" id="2_font"]
@@ -84,7 +84,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 6
 theme_override_fonts/font = ExtResource("2_font")
 theme_override_font_sizes/font_size = 40
-text = "Pontuação Final: 🌟 0
+text = "Pontuação Final:  0
 Erros: 0"
 horizontal_alignment = 1
 
@@ -104,7 +104,7 @@ theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxTexture_btn")
 theme_override_styles/hover = SubResource("StyleBoxTexture_btn")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_btn")
-text = "🔄 Jogar de Novo"
+text = " Jogar de Novo"
 
 [node name="BtnMenu" type="Button" parent="VBox/HBox"]
 custom_minimum_size = Vector2(260, 80)
@@ -117,7 +117,7 @@ theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxTexture_btn")
 theme_override_styles/hover = SubResource("StyleBoxTexture_btn")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_btn")
-text = "🏠 Menu Principal"
+text = " Menu Principal"
 
 [node name="TimerBotao" type="Timer" parent="."]
 
@@ -133,3 +133,4 @@ autostart = true
 [connection signal="pressed" from="VBox/HBox/BtnMenu" to="." method="_on_menu_pressed"]
 [connection signal="timeout" from="TimerBotao" to="." method="_on_timer_botao_timeout"]
 [connection signal="timeout" from="TimerInstrucao" to="." method="_on_timer_instrucao_timeout"]
+

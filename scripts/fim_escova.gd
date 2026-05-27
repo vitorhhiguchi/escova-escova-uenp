@@ -1,4 +1,4 @@
-extends Control
+﻿extends Control
 
 @onready var bg_rect = $Background
 @onready var score_label = $VBox/ScoreLabel
@@ -14,7 +14,7 @@ func _ready() -> void:
 	else:
 		bg_rect.texture = load("res://assets/escova/masc-fim-sorrindo.png")
 		
-	score_label.text = "Pontuação Final: 🌟 %d\nErros: %d" % [Global.Score, Global.erros]
+	score_label.text = "Pontuação Final:  %d\nErros: %d" % [Global.Score, Global.erros]
 	
 	Audios.tocar_instrucao("res://assets/audios/tela_final.ogg")
 	
@@ -47,3 +47,4 @@ func _on_timer_instrucao_timeout() -> void:
 
 func is_mouse_inside() -> bool:
 	return mouse_dentro
+
