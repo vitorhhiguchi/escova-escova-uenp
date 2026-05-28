@@ -1,4 +1,4 @@
-﻿[gd_scene load_steps=5 format=3 uid="uid://fim_escova_uid"]
+[gd_scene load_steps=5 format=3 uid="uid://fim_escova_uid"]
 
 [ext_resource type="Script" path="res://scripts/fim_escova.gd" id="1_script"]
 [ext_resource type="FontFile" uid="uid://bc82x70ugbeoq" path="res://assets/Fontes/identidad/Identidad-ExtraBold.otf" id="2_font"]

@@ -1,4 +1,4 @@
-﻿extends Node2D
+extends Node2D
 
 @onready var word_label = $UI/TopBar/WordLabel
 @onready var score_label = $UI/TopBar/ScoreLabel

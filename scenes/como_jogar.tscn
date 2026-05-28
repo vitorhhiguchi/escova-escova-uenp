@@ -1,4 +1,4 @@
-﻿[gd_scene load_steps=6 format=3 uid="uid://dhht6m7me1exk"]
+[gd_scene load_steps=6 format=3 uid="uid://dhht6m7me1exk"]
 
 [ext_resource type="Script" path="res://scripts/como_jogar.gd" id="1_script"]
 [ext_resource type="Texture2D" path="res://assets/escova/masc-jogando-sujo.png" id="2_bg"]

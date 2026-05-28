@@ -1,4 +1,4 @@
-﻿extends Control
+extends Control
 
 @onready var bg_rect = $Background
 @onready var score_label = $VBox/ScoreLabel

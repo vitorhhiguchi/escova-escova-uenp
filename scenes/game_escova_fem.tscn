@@ -1,4 +1,4 @@
-﻿[gd_scene format=3 uid="uid://bhbeu4hpu5un2"]
+[gd_scene format=3 uid="uid://bhbeu4hpu5un2"]
 
 [ext_resource type="Script" uid="uid://775nd4o1i3cu" path="res://scripts/game_escova.gd" id="1_script"]
 [ext_resource type="FontFile" uid="uid://bc82x70ugbeoq" path="res://assets/Fontes/identidad/Identidad-ExtraBold.otf" id="2_font"]
