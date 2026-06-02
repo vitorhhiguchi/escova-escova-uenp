@@ -49,7 +49,7 @@ func executar_tutorial() -> void:
 	if tutorial_encerrado: return
 	
 	# 2. Explica o objetivo
-	Audios.tocar_instrucao("res://assets/audios/tela_do_jogo.ogg")
+	Audios.tocar_instrucao("res://assets/audios/tela_do_jogo_novo.mp3")
 	await get_tree().create_timer(3.0).timeout
 	if tutorial_encerrado: return
 	
