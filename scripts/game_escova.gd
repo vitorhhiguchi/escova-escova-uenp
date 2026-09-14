@@ -179,4 +179,3 @@ func _on_timer_instrucao_timeout() -> void:
 
 func is_mouse_inside() -> bool:
 	return mouse_dentro
-
